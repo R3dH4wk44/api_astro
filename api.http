@@ -1,0 +1,40 @@
+### LOGIN Bad
+
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "user_name": "albert",
+    "password": "123"
+}
+
+
+### LOGIN Ok
+
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "user_name": "Hans",
+    "password": "buymeathermomix"
+}
+
+### REGISTER 
+
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "user_name":"albert",
+    "password": "123"
+}
+
+### LAUNCH LIST
+
+GET http://localhost:5000/launch/
+
+### LAUNCH SINGLE
+
+GET http://localhost:5000/launch/3d8a8451-f9c1-4fc4-b9f7-55b07c0b7b1f
+
+

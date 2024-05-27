@@ -1,0 +1,48 @@
+{
+    "parameters": [
+        {
+            "name": "json",
+            "in": "body",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "user_name": {
+                        "type": "string",
+                        "description": "user name"
+                    },
+                    "password": {
+                        "type": "string",
+                        "description": "Password"
+                    }
+                }
+            }
+        }
+    ],
+    "responses": {
+        "200": {
+            "description": "A successfull response",
+            "examples": {
+                "application-json": {
+                    "ok": "True",
+                    "logged": "True"
+                }
+            }
+        },
+        "400": {
+            "description": "A bad Request",
+            "examples": {
+                "application/json": {
+                    "message": "Username and Password are Mandatorys"
+                }
+            }
+        },
+        "404": {
+            "description": "Not Found",
+            "examples": {
+                "application/json": {
+                    "message": "User not Found"
+                }
+            }
+        }
+    }
+}
